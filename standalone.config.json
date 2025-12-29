@@ -1,0 +1,25 @@
+{
+  "comment": "Standalone Scraper Configuration - No Apify needed!",
+
+  "startUrls": [
+    "https://vitality-medical.myshopify.com",
+    "https://1800wheelchair.com",
+    "https://healthproductsforyou.com"
+  ],
+
+  "comment_startUrls": "Add medical device Shopify stores above, or leave empty to auto-search",
+
+  "maxStores": 10,
+  "minProductsPerStore": 1,
+  "extractProducts": true,
+  "maxProductsPerStore": 20,
+  "extractContactInfo": true,
+  "timeout": 15000,
+
+  "tips": [
+    "Start with 3-5 stores for testing",
+    "Provide specific URLs for faster, more reliable results",
+    "Lower minProductsPerStore to 1 for niche categories",
+    "Increase timeout to 30000 if requests are timing out"
+  ]
+}

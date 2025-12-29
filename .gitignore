@@ -6,6 +6,9 @@ package-lock.json
 apify_storage/
 storage/
 
+# Results
+results/
+
 # Environment files
 .env
 .env.local

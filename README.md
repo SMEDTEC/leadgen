@@ -1,6 +1,16 @@
 # Shopify Medical Device Lead Generator
 
-This project scrapes Shopify stores to identify businesses selling medical devices for consumer use. It leverages Apify's web scraping infrastructure to find and extract relevant store information.
+This project scrapes Shopify stores to identify businesses selling medical devices for consumer use.
+
+## Two Ways to Run
+
+1. **🏠 Standalone (Local)** - No external services needed! Just `npm install` and run
+   - See [LOCAL_SETUP.md](LOCAL_SETUP.md)
+   - Best for: Testing, small batches (<50 stores)
+
+2. **☁️ Apify (Cloud)** - Professional scraping platform with proxies and scheduling
+   - See [DEPLOYMENT.md](DEPLOYMENT.md)
+   - Best for: Production, large scale (100+ stores)
 
 ## Overview
 
@@ -43,29 +53,36 @@ The lead generator targets Shopify stores selling:
 └─────────────────┘
 ```
 
-## Setup
+## Quick Start
 
-### Prerequisites
-- Apify account (https://apify.com)
-- Node.js 18+ (for local development)
+### Standalone (Local - No Apify)
 
-### Installation
-
-1. Clone this repository:
 ```bash
-git clone <your-repo-url>
-cd leadgen
+# 1. Install minimal dependencies
+npm install axios cheerio
+
+# 2. Run it!
+npm run standalone
+
+# Results saved to results/ folder
 ```
 
-2. Install dependencies:
+See [LOCAL_SETUP.md](LOCAL_SETUP.md) for full details.
+
+### Apify Platform (Cloud)
+
 ```bash
-npm install
+# 1. Install Apify CLI
+npm install -g apify-cli
+
+# 2. Login and deploy
+apify login
+apify push
+
+# 3. Run on Apify platform
 ```
 
-3. Configure Apify credentials:
-```bash
-export APIFY_TOKEN=your_api_token
-```
+See [DEPLOYMENT.md](DEPLOYMENT.md) for full details.
 
 ## Usage
 
