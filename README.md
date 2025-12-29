@@ -2,13 +2,19 @@
 
 This project scrapes Shopify stores to identify businesses selling medical devices for consumer use.
 
-## Two Ways to Run
+## Three Ways to Run
 
-1. **🏠 Standalone (Local)** - No external services needed! Just `npm install` and run
+1. **🌐 Web App (Easiest!)** - Beautiful web interface, no coding required!
+   - Just run: `npm run webapp` or double-click `start.sh` / `start.bat`
+   - Open http://localhost:3000 in your browser
+   - See [START_WEBAPP.md](START_WEBAPP.md)
+   - **👉 RECOMMENDED FOR NON-CODERS**
+
+2. **🏠 Command Line (Local)** - For developers comfortable with terminal
    - See [LOCAL_SETUP.md](LOCAL_SETUP.md)
    - Best for: Testing, small batches (<50 stores)
 
-2. **☁️ Apify (Cloud)** - Professional scraping platform with proxies and scheduling
+3. **☁️ Apify (Cloud)** - Professional scraping platform
    - See [DEPLOYMENT.md](DEPLOYMENT.md)
    - Best for: Production, large scale (100+ stores)
 
