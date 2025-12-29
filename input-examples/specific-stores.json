@@ -1,0 +1,21 @@
+{
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "startUrls": [
+    {
+      "url": "https://medicalsupplies.myshopify.com"
+    },
+    {
+      "url": "https://healthcaredevices.myshopify.com"
+    },
+    {
+      "url": "https://mobilityaids.myshopify.com"
+    }
+  ],
+  "maxStores": 10,
+  "extractProducts": true,
+  "maxProductsPerStore": 100,
+  "extractContactInfo": true,
+  "minProductsPerStore": 1
+}

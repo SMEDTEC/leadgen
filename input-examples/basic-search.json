@@ -1,0 +1,14 @@
+{
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "searchKeywords": [
+    "medical devices shopify",
+    "home healthcare shopify",
+    "medical supplies shopify"
+  ],
+  "maxStores": 50,
+  "extractProducts": true,
+  "extractContactInfo": true,
+  "minProductsPerStore": 5
+}

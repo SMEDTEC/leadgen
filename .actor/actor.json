@@ -1,0 +1,60 @@
+{
+  "actorSpecification": 1,
+  "name": "shopify-medical-device-scraper",
+  "version": "1.0.0",
+  "buildTag": "latest",
+  "environmentVariables": {},
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./input_schema.json",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Medical Device Stores",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "storeName",
+              "storeUrl",
+              "email",
+              "phone",
+              "productCount",
+              "leadScore"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "storeName": {
+                "label": "Store Name",
+                "format": "text"
+              },
+              "storeUrl": {
+                "label": "URL",
+                "format": "link"
+              },
+              "email": {
+                "label": "Email",
+                "format": "text"
+              },
+              "phone": {
+                "label": "Phone",
+                "format": "text"
+              },
+              "productCount": {
+                "label": "Products",
+                "format": "number"
+              },
+              "leadScore": {
+                "label": "Score",
+                "format": "number"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

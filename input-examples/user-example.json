@@ -1,0 +1,23 @@
+{
+  "comment": "This is based on the user's provided API configuration",
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "startUrls": [
+    {
+      "url": "https://kith.com/collections/kith-tops-1",
+      "comment": "Original example - note: kith.com may not sell medical devices"
+    }
+  ],
+  "comment2": "For medical device stores, replace with actual medical supply Shopify stores",
+  "alternativeStartUrls": [
+    {
+      "url": "https://medicalsupplies.myshopify.com",
+      "comment": "Example medical supply store"
+    }
+  ],
+  "maxStores": 10,
+  "extractProducts": true,
+  "extractContactInfo": true,
+  "minProductsPerStore": 3
+}

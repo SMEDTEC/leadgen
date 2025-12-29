@@ -1,0 +1,91 @@
+{
+  "title": "Shopify Medical Device Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "proxy": {
+      "title": "Proxy Configuration",
+      "type": "object",
+      "description": "Proxy settings for the scraper",
+      "editor": "proxy",
+      "default": {
+        "useApifyProxy": true
+      }
+    },
+    "startUrls": {
+      "title": "Start URLs",
+      "type": "array",
+      "description": "Optional: Specific Shopify store URLs to scrape. If empty, will search for stores.",
+      "editor": "requestListSources",
+      "default": [],
+      "prefill": [
+        {
+          "url": "https://example.myshopify.com"
+        }
+      ]
+    },
+    "searchKeywords": {
+      "title": "Search Keywords",
+      "type": "array",
+      "description": "Keywords to find medical device Shopify stores (used if startUrls is empty)",
+      "editor": "stringList",
+      "default": [
+        "medical devices shopify",
+        "home healthcare shopify",
+        "medical supplies shopify",
+        "mobility aids shopify",
+        "diabetes supplies shopify"
+      ]
+    },
+    "maxStores": {
+      "title": "Maximum Stores",
+      "type": "integer",
+      "description": "Maximum number of stores to scrape",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 1000
+    },
+    "minProductsPerStore": {
+      "title": "Minimum Products Per Store",
+      "type": "integer",
+      "description": "Minimum number of products a store must have to be included",
+      "default": 5,
+      "minimum": 1
+    },
+    "extractProducts": {
+      "title": "Extract Products",
+      "type": "boolean",
+      "description": "Whether to extract individual product information",
+      "default": true
+    },
+    "maxProductsPerStore": {
+      "title": "Maximum Products Per Store",
+      "type": "integer",
+      "description": "Maximum number of products to extract per store",
+      "default": 50,
+      "minimum": 1,
+      "maximum": 500
+    },
+    "medicalCategories": {
+      "title": "Medical Device Categories",
+      "type": "array",
+      "description": "Specific medical device categories to target",
+      "editor": "stringList",
+      "default": [
+        "diagnostic",
+        "mobility",
+        "respiratory",
+        "diabetes",
+        "wound care",
+        "home medical equipment"
+      ]
+    },
+    "extractContactInfo": {
+      "title": "Extract Contact Information",
+      "type": "boolean",
+      "description": "Extract email, phone, and social media contact information",
+      "default": true
+    }
+  },
+  "required": ["proxy"]
+}

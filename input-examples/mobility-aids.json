@@ -1,0 +1,19 @@
+{
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "searchKeywords": [
+    "site:myshopify.com wheelchair",
+    "site:myshopify.com walker rollator",
+    "site:myshopify.com mobility scooter",
+    "site:myshopify.com cane crutches"
+  ],
+  "medicalCategories": [
+    "mobility"
+  ],
+  "maxStores": 75,
+  "extractProducts": true,
+  "maxProductsPerStore": 30,
+  "extractContactInfo": true,
+  "minProductsPerStore": 8
+}

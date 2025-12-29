@@ -1,0 +1,31 @@
+{
+  "name": "shopify-medical-device-scraper",
+  "version": "1.0.0",
+  "description": "Lead generator for Shopify stores selling medical devices",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": [
+    "apify",
+    "shopify",
+    "scraper",
+    "medical-devices",
+    "lead-generation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "apify": "^3.1.0",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "crawlee": "^3.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "proxy": {
+    "useApifyProxy": true
+  },
+  "searchKeywords": [
+    "site:myshopify.com diabetes supplies",
+    "site:myshopify.com glucose monitor",
+    "site:myshopify.com insulin pump",
+    "site:myshopify.com diabetic testing"
+  ],
+  "medicalCategories": [
+    "diabetes"
+  ],
+  "maxStores": 100,
+  "extractProducts": true,
+  "maxProductsPerStore": 50,
+  "extractContactInfo": true,
+  "minProductsPerStore": 10
+}
