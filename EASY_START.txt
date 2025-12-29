@@ -1,0 +1,79 @@
+═══════════════════════════════════════════════════════════════
+  🌐 WEB APP - EASIEST WAY TO USE (NO CODING!)
+═══════════════════════════════════════════════════════════════
+
+FOR NON-CODERS: This is the simplest way!
+
+STEP 1: Install Node.js (one-time only)
+  Download from: https://nodejs.org
+  Click "Download" and install
+
+STEP 2: Open Terminal/Command Prompt
+  Windows: Press Win+R, type "cmd", press Enter
+  Mac: Press Cmd+Space, type "terminal", press Enter
+
+STEP 3: Go to this folder
+  Type: cd /path/to/leadgen
+  (Replace with actual path where you downloaded this)
+
+STEP 4: Install dependencies (one-time only)
+  Type: npm install
+  Press Enter and wait
+
+STEP 5: Start the web app
+  Type: npm run webapp
+  Press Enter
+
+STEP 6: Use the web app
+  Your browser should open to: http://localhost:3000
+  If not, open browser and go there manually
+
+═══════════════════════════════════════════════════════════════
+
+WHAT YOU'LL SEE:
+
+A beautiful purple webpage with a form. It's already filled with
+example stores, so you can just click "Start Scraping" to test!
+
+The form has:
+- Store URLs (already filled with examples)
+- Max stores (set to 5 for testing)
+- Checkboxes for what to extract
+
+Just click the big "Start Scraping" button!
+
+═══════════════════════════════════════════════════════════════
+
+AFTER SCRAPING:
+
+1. You'll see real-time progress
+2. When done, click "View All Results"
+3. See all the leads with contact info
+4. Download as CSV to open in Excel
+5. Use the leads for your business!
+
+═══════════════════════════════════════════════════════════════
+
+EVEN EASIER (Double-Click Method):
+
+Mac/Linux users:
+  Just double-click: start.sh
+
+Windows users:
+  Just double-click: start.bat
+
+This will:
+- Install dependencies if needed
+- Start the web app
+- Open your browser automatically
+
+═══════════════════════════════════════════════════════════════
+
+HELP:
+
+Detailed guide: START_WEBAPP.md
+All docs: README.md
+
+═══════════════════════════════════════════════════════════════
+
+YOU'RE READY! Just run: npm run webapp
